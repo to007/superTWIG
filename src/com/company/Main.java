@@ -10,6 +10,5 @@ public class Main
     {
 	    File raw = new File("rawDataU6.txt");
         Scanner sc = new Scanner(raw);
-        
     }
 }

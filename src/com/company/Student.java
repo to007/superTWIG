@@ -1,6 +1,6 @@
 package com.company;
 
-public class Student 
+public class Student
 {
     double Q1, Q2, avg;
     int secNum;
