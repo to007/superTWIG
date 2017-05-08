@@ -2,20 +2,15 @@ package com.company;
 
 public class Student
 {
-    double Q1, Q2, avg;
-    int secNum;
-    String rName;
-    public Student(double grade1, double grade2, int secretNum, String realName)
+    public String name;
+    public int snum;
+    public double avg, q1, q2;
+    public Student(String Name, int secnum, double q1Grade, double q2Grade)
     {
-        Q1 = grade1;
-        Q2 = grade2;
-        secNum = secretNum;
-        rName = realName;
-        avg = Q1/Q2;
-    }
-    public void avgGrades(double grade1, double grade2)
-    {
-        Q1 /= grade1;
-        Q2 /= grade2;
+        name = Name;
+        snum = secnum;
+        avg = (q1 + q2) / 2;
+        q1 = q1Grade;
+        q2 = q2Grade;
     }
 }

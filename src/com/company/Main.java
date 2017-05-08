@@ -10,5 +10,16 @@ public class Main
     {
 	    File raw = new File("rawDataU6.txt");
         Scanner sc = new Scanner(raw);
+        String reader;
+        int count = 0;
+        double q1;
+        double q2;
+        sc.useDelimiter(" +|\t");
+        sc.nextLine();
+        while(sc.hasNext())
+        {
+            count++;
+            
+        }
     }
 }
