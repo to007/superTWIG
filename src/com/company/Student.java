@@ -13,4 +13,10 @@ public class Student
         q1 = q1Grade;
         q2 = q2Grade;
     }
+    public void String(){
+        System.out.print(Integer.toString(snum));
+        Main.getTabs(Integer.toString(snum), 6);
+        System.out.print(name);
+        Main.getTabs(name, 6);
+    }
 }

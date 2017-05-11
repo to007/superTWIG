@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 	    File raw = new File("rawDataU6.txt");
+        File names = new File("Names.tsv");
         Scanner sc = new Scanner(raw);
         Scanner sc2 = new Scanner(raw);
         sc.useDelimiter("\t|,");
@@ -43,6 +44,12 @@ public class Main {
             add = 0;
 
         }
-        System.out.println(q1);
+
+    }
+    public static void getTabs(String s, int max){
+        int i = max - s.length()/4;
+        for (int j = 0; j < i; j++) {
+            System.out.println("\t");
+        }
     }
 }
